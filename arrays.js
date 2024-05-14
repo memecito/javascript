@@ -24,12 +24,21 @@ try{
     console.log("Algo ha fallado");
     console.log(e);
 }
-
+const numeros=[1,2,3,4,5,6,7,8,9];
 try{
-    const numeros=[1,2,3,4,5,6,7,8,9];
+    
     const numerosX2=numeros.map(function(elemento){return elemento*2;})
     console.log(numeros);
     console.log(numerosX2);
+}catch(e){
+    console.log("Algo ha fallado");
+    console.log(e);
+}
+try{
+
+    const suma = numeros.reduce(function(acumulador, numero){return acumulador + numero;});
+    console.log(suma);
+
 }catch(e){
     console.log("Algo ha fallado");
     console.log(e);
