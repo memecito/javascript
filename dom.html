@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +6,25 @@
 </head>
 <body>
     <h1 id="Saludo">Hola Mundo</h1>
+    <script>
+const elementoSaludo= document.getElementById('Saludo');
+elementoSaludo.innerHTML="Adiós mundo cruel";
+    </script>
+    <button id="button">Botón</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
+// Código JavaScript que manipula el DOM
+const button = document.getElementById('button');
+    button.addEventListener('click', function(event) {
+    console.log("Botón pulsado!");
+    });
+})
+          
+    </script>
+  
     
 </body>
 </html>
-<script>
-const elementoSaludo= document.getElementById('salud');
-elementoSaludo.innerHTML="Adiós mundo cruel";
-</script>
+
+
+
